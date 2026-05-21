@@ -1,3 +1,8 @@
 Verduras 
 carnes 
-lacteos
+lácteos
+
+banana
+peras
+tomates
+limones
