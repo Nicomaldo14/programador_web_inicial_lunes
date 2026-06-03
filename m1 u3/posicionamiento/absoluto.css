@@ -5,13 +5,15 @@
 	width: 60%;
 	height: 500px;
 	position: relative;
+	position:relative;
 	}
 
 #verde{
 	position:absolute;
+	bottom: 10px;
 	top: 0px;
 	left: 0px;
-	margin:0 auto;
+	margin: auto;
 	height:20%;
 	width:94%;
 	border:1px solid #80BC3A;
