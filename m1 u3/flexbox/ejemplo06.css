@@ -5,8 +5,8 @@
 	align-items: flex-start;
 	align-items: flex-end;
 	align-items: center;
-	/* align-items: stretch; */
-	/* align-items: baseline; */
+	align-items: stretch; 
+	align-items: baseline; 
 }
 
 
