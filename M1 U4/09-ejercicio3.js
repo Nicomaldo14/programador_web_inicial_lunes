@@ -1,5 +1,4 @@
 const compras=[`leche`,`pan`,`huevos`,`azucar`]
-console.log(`No te olvides de comprar ${compras[0]}`)
-console.log(`No te olvides de comprar ${compras[1]}`)
-console.log(`No te olvides de comprar ${compras[2]}`)
-console.log(`No te olvides de comprar ${compras[3]}`)   
+for (let i = 0; i < compras.length; i++) {
+    console.log(`No te olvides de comprar ${compras[i]}`);
+}
