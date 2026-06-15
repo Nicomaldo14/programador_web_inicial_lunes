@@ -1,4 +1,4 @@
-//console.log('hola soy del curso de programador')
+console.log('hola soy del curso de programador')
 
 const nombre = 'Nico' // tipo texto o string
 const edad = 30 // tipo numero o number
