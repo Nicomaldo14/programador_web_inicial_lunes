@@ -23,25 +23,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
+                        <a class="nav-link" href="#novedades">Novedades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Historia</a>
+                        <a class="nav-link" href="#Historia">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="#Nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conocenos</a>
+                        <a class="nav-link" href="#conocenos">Conocenos</a>
                     </li>
             </div>
         </div>
     </nav>
     <div class="container-fluid">
-        <div id="home" class=" row align-items-center hero">
+        <div id="home" class=" row align-items-center hero scroll_section">
             <div class="col-lg-3 offset-lg-2">
                 <p>Bajada</p>
                 <h1> Titulo Principal</h1>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="row my-3">
-            <div id="novedades" class=" col-md-5 offset-md-2">
+            <div id="novedades" class=" col-md-5 offset-md-2 scroll_section">
                 <h2>Novedades</h2>
                 <ul class="lista-novedades">
                     <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img
@@ -61,80 +61,199 @@
                     <li><a href="#"><img src="img/novedades01.jpg"> Nuevas recetas 5</a></li>
                 </ul>
             </div>
-        
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title " id="exampleModalLabel">Nueva receta 1</h2>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title " id="exampleModalLabel">Nueva receta 1</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <h3>Subtitulo</h3>
+                            <p>cuerpo</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 my-3">
+                <div class="rounded py-5 testimonios">
+                    <h2 class="text-center"> Testimonios</h2>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="testimonio">
+                                    <h5>La mejor birra del mundo!!!</h5>
+                                    <p> Francisco, Monte Grande</p>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="testimonio">
+                                    <h5>La mejor birra del mundo 2!!!</h5>
+                                    <p> Nicolas, Bariloche</p>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="testimonio">
+                                    <h5>La mejor birra del mundo 3!!!</h5>
+                                    <p> Melisa, San Martin de los Andes</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="Historia" class="row aling-items-center py-4 scroll_section">
+            <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+                <img src="img/historia_1.jpg" alt="historia 1 " class="img-fluid">
+            </div>
+            <div class="col-lg-2 col-md-3 d-none d-sm-block">
+                <img src="img/historia_2.jpg" alt="historia 2" class="img-fluid">
+            </div>
+            <div class="col-lg-12 d-sm-none">
+                <img src="img/historia_3.jpg" alt="historia 3" class="img-fluid">
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-sm-o">
+                <h2>Historia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex
+                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt
+                    mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <div id="Nosotros" class="row aling-items-stretch my-3 staff py-4 scroll_section">
+            <div class="col-lg-8 offset-lg-2">
+                <h2>Nosotros</h2>
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/nosotros01.jpg" class="card-img-top" alt="Diana Reyes">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Diana Reyes</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/nosotros02.jpg" class="card-img-top" alt="Juan Perez">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Juan Perez</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/nosotros03.jpg" class="card-img-top" alt="Jose Maria Aguilar">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Jose Maria Aguilar</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="img/nosotros04.jpg" class="card-img-top" alt="Damian Gonzalez">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Damian Gonzalez</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                                    eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="conocenos" class="row py-4 scroll_section">
+            <div class="col-md-4 offset-md-2">
+                <h2>Visitanos</h2>
+                <div class="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d375.5066288545676!2d-71.31886290735574!3d-41.15519415850929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b3a4236d285%3A0xc5d744a7ac87fa49!2sCerro%20Bellavista%20Street%2067%2C%20R8400%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses!2sar!4v1783463645794!5m2!1ses!2sar"></iframe>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+                <h2>Contactanos</h2>
+
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Nombre</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputPassword4" class="form-label">Apellido</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Email@email.com">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Teléfono</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="....">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Mensaje</label>
+                        <textarea class="form-control"id= "mensaje" rows="3"></textarea>
                     </div>
                     
-                    <div class="modal-body">
-                        <h3>Subtitulo</h3>
-                        <p>cuerpo</p>
+            
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
                     </div>
-
-                </div>
+                </form>
             </div>
         </div>
-        <div class="col-md-3 my-3">
-            <div class="rounded py-5 testimonios">
-                <h2 class="text-center"> Testimonios</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <div class="testimonio">
-                                <h5>La mejor birra del mundo!!!</h5>
-                                <p> Francisco, Monte Grande</p>
-
-                            </div>
-                        </div>
-                        <div class="carousel-item ">
-                            <div class="testimonio">
-                                <h5>La mejor birra del mundo 2!!!</h5>
-                                <p> Nicolas, Bariloche</p>
-
-                            </div>
-                        </div>
-                        <div class="carousel-item ">
-                            <div class="testimonio">
-                                <h5>La mejor birra del mundo 3!!!</h5>
-                                <p> Melisa, San Martin de los Andes</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </div>
-
-
-    </div>
-
-
 
 
 
