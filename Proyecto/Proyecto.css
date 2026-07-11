@@ -1,5 +1,13 @@
 footer{
-    background-color:rgb(27, 25, 25);
-    color:gray;
-    
+    background-color:#aaa;
+}
+h2{
+    font-family: "Alfa Slab One", cursive;
+    font-size: 2rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+.scroll_section {
+    scroll-margin-top: 60px;
 }
