@@ -9,7 +9,7 @@ var usersRouter = require('./routes/users');
 
 //*ruta4*/
 //*paso1*/
-var contactoRouter= requiere('./routes/contacto'); //contacto.js
+var contactoRouter= require('./routes/contacto'); //contacto.js
 
 var app = express();
 
