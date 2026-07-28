@@ -1,13 +1,28 @@
 footer{
     background-color:#aaa;
 }
+
 h2{
     font-family: "Alfa Slab One", cursive;
     font-size: 2rem;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .scroll_section {
     scroll-margin-top: 60px;
+}
+
+.staff {
+    background: #efefef;
+    background: gray;
+  
+}
+
+.mapa iframe {
+    width: 100%;
+    aspect-ratio: 1.2;
+  
 }
