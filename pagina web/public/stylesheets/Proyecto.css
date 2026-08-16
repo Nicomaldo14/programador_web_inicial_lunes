@@ -2,6 +2,22 @@ footer{
     background-color:#aaa;
 }
 
+.Catalogo {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+.Novedades {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+.Nosotros {
+    font-family: "Alfa Slab One", cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
 h2{
     font-family: "Alfa Slab One", cursive;
     font-size: 2rem;
