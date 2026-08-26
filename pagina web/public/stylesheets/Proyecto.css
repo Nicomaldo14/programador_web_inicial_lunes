@@ -28,14 +28,10 @@ footer{
     filter: drop-shadow(0 0 0.80rem gray);
     display: flex;
     transition: transform 0.3s ease;
-
+    width: 280px;
+    margin: 0 auto;
 }
 
-.img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
 
 img:hover {
     transform: scale(1.15);
