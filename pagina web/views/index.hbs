@@ -24,71 +24,40 @@
   </div>
   <div id="Novedades" class="row aling-items-stretch my-3  py-4 scroll_section">
     <h2 class="Novedades">Novedades</h2>
+    {{#each novedades}}
     <div class="row row-cols-1 row-cols-md-4 g-4">
       <div class="col">
         <div class="card">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="images/nov1.jpg" class="card-img-top" alt="...">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}">
+            <img src="{{imagen}}" class="card-img-top" alt="...">
           </a>
           <div class="card-body">
-            <h5 class="card-title">Buzo con capucha verde NYC</h5>
-
-
-          </div>
-
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img src="images/nov2.jpg" class="card-img-top" alt="...">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Buzo con capucha blanco NYC</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="images/nov3.jpg" class="card-img-top" alt="...">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Buzo con capucha gris NYC</h5>
-
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <img src="images/nov4.jpg" class="card-img-top" alt="...">
-          </a>
-          <div class="card-body">
-            <h5 class="card-title">Buzo con capucha azul NYC</h5>
-
+            <h5 class="card-title">{{titulo}}</h5>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {{/each}}
+  </div>
+{{#each novedades}}
+    <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h2 class="modal-title " id="exampleModalLabel">Nueva receta 1</h2>
+            <h2 class="modal-title " id="exampleModalLabel">{{titulo}}</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
 
           <div class="modal-body">
-            <h3>Subtitulo</h3>
-            <p>cuerpo</p>
+            <h3>{{subtitulo}}</h3>
+            <img src="{{imagen}}" class="card-img-top" alt="...">
+            <p>{{cuerpo}}</p>
           </div>
 
         </div>
       </div>
     </div>
-
+{{/each}}
     <div id='Catalogo' class="row aling-items-stretch my-3  py-4 scroll_section">
       <h2 class="Catalogo">Catálogo Masculino</h2>
       <div class="row row-cols-3 row-cols-md-4 g-3">
