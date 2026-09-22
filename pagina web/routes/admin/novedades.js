@@ -65,7 +65,7 @@ if (req.files && Object.keys(req.files).length > 0) {
 }
 try {
     if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
-      await novedadesModel.insertNovedades(...req.body, img_id);
+      await novedadesModel.insertNovedades({...req.body, img_id});
       res.redirect('/admin/novedades')
     } else {
       res.render('admin/agregar', {
